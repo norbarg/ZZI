@@ -1,0 +1,663 @@
+[
+  {
+    "url": "https://www.facebook.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/settings",
+    "label": 0
+  },
+  {
+    "url": "http://208.201.16.91/netflix/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "https://www.youtube.com/signin",
+    "label": 0
+  },
+  {
+    "url": "http://monobаnk.com/signin",
+    "label": 1,
+    "pattern": "homoglyph-like"
+  },
+  {
+    "url": "https://www.netflix.com/",
+    "label": 0
+  },
+  {
+    "url": "https://secure-github-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "https://www.github.com/",
+    "label": 0
+  },
+  {
+    "url": "https://secure-monobank-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "https://www.github.com/help",
+    "label": 0
+  },
+  {
+    "url": "https://www.monobank.ua/settings",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/profile",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/account",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/profile",
+    "label": 0
+  },
+  {
+    "url": "https://www.facebook.com/help",
+    "label": 0
+  },
+  {
+    "url": "http://youtube-youtube.tk/login.php?redirect=youtube.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.youtube.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "http://monobank.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "http://facebook.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "http://github.com/signin",
+    "label": 1,
+    "pattern": "homoglyph-like"
+  },
+  {
+    "url": "http://facebook.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "http://monobank.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "https://www.monobank.ua/help",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "label": 0
+  },
+  {
+    "url": "http://github-github.tk/login.php?redirect=github.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.github.com/login",
+    "label": 0
+  },
+  {
+    "url": "http://github.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "https://secure-facebook-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "http://facebook.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "https://www.netflix.com/signin",
+    "label": 0
+  },
+  {
+    "url": "https://secure-monobank-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "label": 0
+  },
+  {
+    "url": "http://facebook.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "https://www.github.com/help",
+    "label": 0
+  },
+  {
+    "url": "http://81.41.81.19/netflix/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "http://monobank-secure-login.tk/verify",
+    "label": 1,
+    "pattern": "tld-swap"
+  },
+  {
+    "url": "https://www.netflix.com/settings",
+    "label": 0
+  },
+  {
+    "url": "http://monobank-monobank.tk/login.php?redirect=monobank.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.youtube.com/settings",
+    "label": 0
+  },
+  {
+    "url": "https://www.monobank.ua/",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/help",
+    "label": 0
+  },
+  {
+    "url": "https://www.monobank.ua/login",
+    "label": 0
+  },
+  {
+    "url": "http://monobank-monobank.tk/login.php?redirect=monobank.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.netflix.com/",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/help",
+    "label": 0
+  },
+  {
+    "url": "http://netflix-netflix.tk/login.php?redirect=netflix.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.netflix.com/account",
+    "label": 0
+  },
+  {
+    "url": "https://www.monobank.ua/account",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "http://github.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "https://secure-monobank-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "https://www.monobank.ua/login",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "http://166.100.151.78/youtube/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "https://www.youtube.com/login",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/account",
+    "label": 0
+  },
+  {
+    "url": "http://250.9.219.183/monobank/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "https://www.monobank.ua/",
+    "label": 0
+  },
+  {
+    "url": "http://github.com/signin",
+    "label": 1,
+    "pattern": "homoglyph-like"
+  },
+  {
+    "url": "https://www.monobank.ua/profile",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/settings",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/signin",
+    "label": 0
+  },
+  {
+    "url": "http://facebook-facebook.tk/login.php?redirect=facebook.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "http://fаcebook.com/signin",
+    "label": 1,
+    "pattern": "homoglyph-like"
+  },
+  {
+    "url": "https://www.youtube.com/login",
+    "label": 0
+  },
+  {
+    "url": "https://www.monobank.ua/help",
+    "label": 0
+  },
+  {
+    "url": "https://secure-github-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "label": 0
+  },
+  {
+    "url": "http://facebook-facebook.tk/login.php?redirect=facebook.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.netflix.com/profile",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/signin",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/help",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/signin",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/settings",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/login",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/settings",
+    "label": 0
+  },
+  {
+    "url": "https://www.facebook.com/profile",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/settings",
+    "label": 0
+  },
+  {
+    "url": "https://secure-facebook-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "https://www.netflix.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "https://secure-github-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "https://www.github.com/help",
+    "label": 0
+  },
+  {
+    "url": "https://www.facebook.com/settings",
+    "label": 0
+  },
+  {
+    "url": "http://monobank.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "https://www.facebook.com/login",
+    "label": 0
+  },
+  {
+    "url": "https://secure-github-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "http://163.206.12.160/netflix/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "http://github-secure-login.tk/verify",
+    "label": 1,
+    "pattern": "tld-swap"
+  },
+  {
+    "url": "http://13.194.70.64/netflix/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "https://www.youtube.com/signin",
+    "label": 0
+  },
+  {
+    "url": "https://www.facebook.com/profile",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/help",
+    "label": 0
+  },
+  {
+    "url": "http://github.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "http://github.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "label": 0
+  },
+  {
+    "url": "https://secure-youtube-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "http://netflix-netflix.tk/login.php?redirect=netflix.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.monobank.ua/account",
+    "label": 0
+  },
+  {
+    "url": "https://secure-netflix-update.xyz/account@confirm",
+    "label": 1,
+    "pattern": "at-symbol-trick"
+  },
+  {
+    "url": "http://monobank-secure-login.tk/verify",
+    "label": 1,
+    "pattern": "tld-swap"
+  },
+  {
+    "url": "https://www.monobank.ua/login",
+    "label": 0
+  },
+  {
+    "url": "https://www.monobank.ua/",
+    "label": 0
+  },
+  {
+    "url": "http://monobank.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "http://github-github.tk/login.php?redirect=github.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.monobank.ua/",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/settings",
+    "label": 0
+  },
+  {
+    "url": "https://www.facebook.com/settings",
+    "label": 0
+  },
+  {
+    "url": "http://244.178.108.118/youtube/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "http://facebook-secure-login.tk/verify",
+    "label": 1,
+    "pattern": "tld-swap"
+  },
+  {
+    "url": "https://www.github.com/settings",
+    "label": 0
+  },
+  {
+    "url": "http://youtube.com/signin",
+    "label": 1,
+    "pattern": "homoglyph-like"
+  },
+  {
+    "url": "http://github.com/signin",
+    "label": 1,
+    "pattern": "homoglyph-like"
+  },
+  {
+    "url": "https://www.youtube.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/help",
+    "label": 0
+  },
+  {
+    "url": "http://netflix-secure-login.tk/verify",
+    "label": 1,
+    "pattern": "tld-swap"
+  },
+  {
+    "url": "https://www.youtube.com/account",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/signin",
+    "label": 0
+  },
+  {
+    "url": "http://14.241.234.157/netflix/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "https://www.monobank.ua/",
+    "label": 0
+  },
+  {
+    "url": "https://www.monobank.ua/login",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "label": 0
+  },
+  {
+    "url": "http://netflix-secure-login.tk/verify",
+    "label": 1,
+    "pattern": "tld-swap"
+  },
+  {
+    "url": "https://www.facebook.com/login",
+    "label": 0
+  },
+  {
+    "url": "http://netflix-netflix.tk/login.php?redirect=netflix.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.netflix.com/login",
+    "label": 0
+  },
+  {
+    "url": "https://www.monobank.ua/settings",
+    "label": 0
+  },
+  {
+    "url": "http://github.com/signin",
+    "label": 1,
+    "pattern": "homoglyph-like"
+  },
+  {
+    "url": "https://www.github.com/dashboard",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/account",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/signin",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/account",
+    "label": 0
+  },
+  {
+    "url": "http://facebook.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "http://facebook-facebook.tk/login.php?redirect=facebook.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "http://github.account-verify.ru/signin?user=1",
+    "label": 1,
+    "pattern": "subdomain-trick"
+  },
+  {
+    "url": "http://monobank-secure-login.tk/verify",
+    "label": 1,
+    "pattern": "tld-swap"
+  },
+  {
+    "url": "https://www.monobank.ua/login",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/help",
+    "label": 0
+  },
+  {
+    "url": "http://144.244.253.238/netflix/login",
+    "label": 1,
+    "pattern": "ip-instead-of-domain"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "label": 0
+  },
+  {
+    "url": "https://www.youtube.com/profile",
+    "label": 0
+  },
+  {
+    "url": "https://www.github.com/",
+    "label": 0
+  },
+  {
+    "url": "http://netflix-netflix.tk/login.php?redirect=netflix.com",
+    "label": 1,
+    "pattern": "double-brand"
+  },
+  {
+    "url": "https://www.github.com/",
+    "label": 0
+  },
+  {
+    "url": "http://monobank-secure-login.tk/verify",
+    "label": 1,
+    "pattern": "tld-swap"
+  },
+  {
+    "url": "https://www.netflix.com/help",
+    "label": 0
+  },
+  {
+    "url": "https://www.netflix.com/dashboard",
+    "label": 0
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "variant": 3,
+  "scenario_profile": "E-commerce (фішинг під підтвердження замовлення)",
+  "target_domains": [
+    "monobank.ua",
+    "facebook.com",
+    "youtube.com",
+    "github.com",
+    "netflix.com"
+  ],
+  "phishing_patterns_used": [
+    "subdomain-trick",
+    "tld-swap",
+    "double-brand",
+    "ip-instead-of-domain",
+    "at-symbol-trick",
+    "homoglyph-like"
+  ],
+  "phish_ratio": 0.41,
+  "total_examples": 150
+}
