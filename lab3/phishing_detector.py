@@ -4,9 +4,8 @@ import sys
 
 import numpy as np
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
-
+from sklearn.model_selection import train_test_split
 
 # Список легітимних брендів, під які найчастіше маскується фішинг
 KNOWN_BRANDS = [
@@ -22,6 +21,7 @@ KNOWN_BRANDS = [
 # ---------------------------------------------------------------------
 # 1. Вилучення ознак (Feature Extraction)
 # ---------------------------------------------------------------------
+
 
 def levenshtein(a: str, b: str) -> int:
     """Відстань Левенштейна — кількість правок для перетворення a в b."""
@@ -41,9 +41,7 @@ def levenshtein(a: str, b: str) -> int:
             deletions = current_row[j] + 1
             substitutions = previous_row[j] + (ca != cb)
 
-            current_row.append(
-                min(insertions, deletions, substitutions)
-            )
+            current_row.append(min(insertions, deletions, substitutions))
 
         previous_row = current_row
 
@@ -55,10 +53,7 @@ def min_brand_distance(domain: str) -> int:
     Мінімальна відстань Левенштейна від домену до відомих брендів.
     Низьке значення (1-2) при відмінному домені є ознакою тайпсквотингу.
     """
-    return min(
-        levenshtein(domain, brand)
-        for brand in KNOWN_BRANDS
-    )
+    return min(levenshtein(domain, brand) for brand in KNOWN_BRANDS)
 
 
 def extract_features(url: str) -> dict:
@@ -74,11 +69,7 @@ def extract_features(url: str) -> dict:
         )
     )
 
-    subdomain_count = (
-        domain.count(".") - 1
-        if not has_ip
-        else 0
-    )
+    subdomain_count = domain.count(".") - 1 if not has_ip else 0
 
     brand_dist = min_brand_distance(domain.lower())
     suspicious_words = [
@@ -93,9 +84,7 @@ def extract_features(url: str) -> dict:
         any(word in domain.lower() for word in suspicious_words)
     )
 
-    digits_in_domain = sum(
-        c.isdigit() for c in domain
-    )
+    digits_in_domain = sum(c.isdigit() for c in domain)
 
     return {
         "url_length": len(url),
@@ -129,6 +118,7 @@ FEATURE_NAMES = [
 # 2. Завантаження розміченого датасету
 # ---------------------------------------------------------------------
 
+
 def load_dataset(
     path: str,
 ) -> tuple[np.ndarray, np.ndarray, list[str]]:
@@ -139,17 +129,9 @@ def load_dataset(
     urls = [item["url"] for item in data]
     labels = np.array([item["label"] for item in data])
 
-    feature_rows = [
-        extract_features(u)
-        for u in urls
-    ]
+    feature_rows = [extract_features(u) for u in urls]
 
-    X = np.array(
-        [
-            [row[name] for name in FEATURE_NAMES]
-            for row in feature_rows
-        ]
-    )
+    X = np.array([[row[name] for name in FEATURE_NAMES] for row in feature_rows])
 
     return X, labels, urls
 
@@ -157,6 +139,7 @@ def load_dataset(
 # ---------------------------------------------------------------------
 # 3. Навчання та оцінка моделі
 # ---------------------------------------------------------------------
+
 
 def train_and_evaluate(
     X: np.ndarray,
@@ -194,44 +177,23 @@ def train_and_evaluate(
 
     cm = confusion_matrix(y_test, y_pred)
 
-    print(
-        f"{'':20}"
-        f"{'Прогноз: Легіт.':^18}"
-        f"{'Прогноз: Фішинг':^18}"
-    )
+    print(f"{'':20}" f"{'Прогноз: Легіт.':^18}" f"{'Прогноз: Фішинг':^18}")
+
+    print(f"{'Факт: Легітимний':20}" f"{cm[0][0]:^18}" f"{cm[0][1]:^18}")
+
+    print(f"{'Факт: Фішинг':20}" f"{cm[1][0]:^18}" f"{cm[1][1]:^18}")
 
     print(
-        f"{'Факт: Легітимний':20}"
-        f"{cm[0][0]:^18}"
-        f"{cm[0][1]:^18}"
-    )
-
-    print(
-        f"{'Факт: Фішинг':20}"
-        f"{cm[1][0]:^18}"
-        f"{cm[1][1]:^18}"
-    )
-
-    print(
-        "\nВага кожної ознаки в рішенні моделі "
-        "(коефіцієнти логістичної регресії):"
+        "\nВага кожної ознаки в рішенні моделі " "(коефіцієнти логістичної регресії):"
     )
 
     for name, coef in sorted(
         zip(FEATURE_NAMES, model.coef_[0]),
         key=lambda x: -abs(x[1]),
     ):
-        direction = (
-            "→ ФІШИНГ"
-            if coef > 0
-            else "→ легітимний"
-        )
+        direction = "→ ФІШИНГ" if coef > 0 else "→ легітимний"
 
-        print(
-            f"{name:30} "
-            f"{coef:+.3f} "
-            f"{direction}"
-        )
+        print(f"{name:30} " f"{coef:+.3f} " f"{direction}")
 
     return model
 
@@ -240,6 +202,7 @@ def train_and_evaluate(
 # 4. Класифікація нового URL
 # ---------------------------------------------------------------------
 
+
 def classify_url(
     model: LogisticRegression,
     url: str,
@@ -247,30 +210,16 @@ def classify_url(
 
     features = extract_features(url)
 
-    X_new = np.array(
-        [
-            [
-                features[name]
-                for name in FEATURE_NAMES
-            ]
-        ]
-    )
+    X_new = np.array([[features[name] for name in FEATURE_NAMES]])
 
     proba = model.predict_proba(X_new)[0]
     prediction = model.predict(X_new)[0]
 
-    label = (
-        "ФІШИНГ"
-        if prediction == 1
-        else "легітимний"
-    )
+    label = "ФІШИНГ" if prediction == 1 else "легітимний"
 
     print(f"\nURL: {url}")
 
-    print(
-        f"Класифікація: {label} "
-        f"(імовірність фішингу: {proba[1]:.1%})"
-    )
+    print(f"Класифікація: {label} " f"(імовірність фішингу: {proba[1]:.1%})")
 
     print(f"Ознаки: {features}")
 
@@ -279,12 +228,9 @@ def classify_url(
 # 5. Точка входу
 # ---------------------------------------------------------------------
 
+
 def main():
-    path = (
-        sys.argv[1]
-        if len(sys.argv) > 1
-        else "dataset.json"
-    )
+    path = sys.argv[1] if len(sys.argv) > 1 else "dataset.json"
 
     X, y, urls = load_dataset(path)
 

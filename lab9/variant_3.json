@@ -1,0 +1,11 @@
+{
+  "variant": 3,
+  "certificate_domain": "tkachenko.sec.local",
+  "signature_algorithm": "ECDSA-P256",
+  "signature_algorithm_oid": "ecdsa-with-SHA256",
+  "key_type": "EC",
+  "avalanche_test_message": "Release payment to vendor XYZ",
+  "avalanche_bit_position": 3,
+  "nonce_message_a": "Sign contract version 1",
+  "nonce_message_b": "Sign contract version 2"
+}
