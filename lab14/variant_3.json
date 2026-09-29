@@ -1,0 +1,7 @@
+{
+  "variant": 3,
+  "license_key": "ITNV-WCA4-JI9Q",
+  "anomaly_threshold": 4194303,
+  "anomaly_threshold_hex": "0x3fffff",
+  "loop_size": 5000
+}
