@@ -1,0 +1,30 @@
+{
+  "variant": 3,
+  "internal_subnet": "172.16.8",
+  "client_ip": "172.16.8.62",
+  "outbound_policy": [
+    "TCP:80",
+    "TCP:443",
+    "UDP:53",
+    "TCP:21"
+  ],
+  "traffic_stream": [
+    "POST /comment HTTP/1.1 text=<script>alert('xss')</script>",
+    "GET /product?id=379 HTTP/1.1",
+    "GET / HTTP/1.1 User-Agent: sqlmap/1.6.12",
+    "GET /profile?id=1 UNION SELECT username,password FROM users HTTP/1.1",
+    "GET /about.html HTTP/1.1",
+    "POST /contact HTTP/1.1 name=John&email=john@example.com",
+    "POST /contact HTTP/1.1 name=John&email=john@example.com",
+    "POST /contact HTTP/1.1 name=John&email=john@example.com",
+    "POST /contact HTTP/1.1 name=John&email=john@example.com",
+    "GET /files?path=../../../etc/passwd HTTP/1.1"
+  ],
+  "expected_attack_types": [
+    "directory_traversal",
+    "sqli_union",
+    "scanner_ua",
+    "xss_script"
+  ],
+  "expected_num_alerts": 4
+}
