@@ -1,0 +1,16 @@
+{
+  "variant": 3,
+  "disaster_type": "hardware_failure",
+  "disaster_description": "Апаратний збій (вихід з ладу накопичувача)",
+  "directory_structure": [
+    "source_code",
+    "build_artifacts",
+    "documentation"
+  ],
+  "mtd_hours": 12,
+  "rto_hours": 3.3,
+  "wrt_hours": 0.8,
+  "rpo_hours": 8,
+  "num_files": 6,
+  "num_incremental_rounds": 4
+}

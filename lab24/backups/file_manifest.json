@@ -1,0 +1,20 @@
+{
+  "build_artifacts/file_01.txt": "9f16844a3f85117212ab679019c2c53655a6532fba3a3810bb524ac98a0f95b2",
+  "build_artifacts/file_02.txt": "dd97f3094689072b4bf6a5a13000c9b2cfa305b0441f233154ac9e99497ee5eb",
+  "build_artifacts/file_03.txt": "9948a202ced22aeb7c3fe357e8be2fadbaca62cf844313915ca3fb638d8f6e6c",
+  "build_artifacts/file_04.txt": "ebd91f603b628b63b965253c72b7e21885e2ff42ece0f1003f9d5053fa38567f",
+  "build_artifacts/file_05.txt": "97384480cf35cf3e527c59fd9f093ee6a0168ae41f2e6daafd702235a25eaa62",
+  "build_artifacts/file_06.txt": "802b09526bdad3c7e41fff14809fa09841c1fe01f050b954cb1e89d3cc45a058",
+  "documentation/file_01.txt": "5d86eacbd21972a5701be82fe6062f7cfad7850d0877501a2102347ab69001d5",
+  "documentation/file_02.txt": "0d04cceb852459e92d85d5f5c9d946fc8a4c33f4c230ab1a807f314ab0a170cd",
+  "documentation/file_03.txt": "30633f0d2f31edf7c8b4b3c6aa4b230d9cb5656ac27c80a266416daf994df213",
+  "documentation/file_04.txt": "cc13a345771935da35cb064d6397540d402a3540feb484ab8fa8bb3357d3e14e",
+  "documentation/file_05.txt": "264ee6b8e566d8e557f6ce275c445291aed11239a07a70596c89a00843d6ddc1",
+  "documentation/file_06.txt": "dc619165ac2824a61259b49e0bae846b9939e1e2757a6902aed74f628bb6be38",
+  "source_code/file_01.txt": "230bd28bafada7d2253d9d9d69e48dcf3f681d6ae3ee1771f8bc20a112b19b28",
+  "source_code/file_02.txt": "4dbe70826ba007b31944d839516801d0b5cfd50072d9d5700d5e6fcb8466578d",
+  "source_code/file_03.txt": "50e89070cec84c25daf208f1d6a5764c1ce10d342a6954f1bff2b477860ddb0c",
+  "source_code/file_04.txt": "939777484d447d8e49400064c59cb115a33c8fc75a6e8b2b5183209e9f9fcbd8",
+  "source_code/file_05.txt": "6628b87fb9107b64d0bfbeff429fed726b47fd825c2c67f93916ae4cdbd454bb",
+  "source_code/file_06.txt": "62fe7818770b7fe72de973cf139373081db63143223f6f10b1827e22d5e922f9"
+}
