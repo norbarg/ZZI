@@ -1,0 +1,83 @@
+{
+    "company": "DevBridge Solutions",
+    "employees_total": 180,
+    "identity": {
+        "mfa_policy_all_180": true,
+        "users": [
+            {
+                "id": "dev01",
+                "role": "Developer",
+                "mfa_enabled": true,
+                "mfa_method": "TOTP"
+            },
+            {
+                "id": "qa01",
+                "role": "QA",
+                "mfa_enabled": true,
+                "mfa_method": "FIDO2"
+            },
+            {
+                "id": "devops01",
+                "role": "DevOps",
+                "mfa_enabled": true,
+                "mfa_method": "FIDO2"
+            },
+            {
+                "id": "sec01",
+                "role": "Security",
+                "mfa_enabled": true,
+                "mfa_method": "FIDO2"
+            },
+            {
+                "id": "admin01",
+                "role": "SysAdmin",
+                "mfa_enabled": true,
+                "mfa_method": "FIDO2"
+            }
+        ]
+    },
+    "gitlab": {
+        "projects": [
+            { "id": "P1", "isolated": true, "cross_project_access": false },
+            { "id": "P2", "isolated": true, "cross_project_access": false },
+            { "id": "P3", "isolated": true, "cross_project_access": false },
+            { "id": "P4", "isolated": true, "cross_project_access": false },
+            { "id": "P5", "isolated": true, "cross_project_access": false },
+            { "id": "P6", "isolated": true, "cross_project_access": false },
+            { "id": "P7", "isolated": true, "cross_project_access": false },
+            { "id": "P8", "isolated": true, "cross_project_access": false }
+        ]
+    },
+    "cicd": {
+        "runners": [
+            {
+                "id": "runner-p1",
+                "protected": true,
+                "isolated": true,
+                "long_lived_secrets": false
+            },
+            {
+                "id": "runner-p2",
+                "protected": true,
+                "isolated": true,
+                "long_lived_secrets": false
+            }
+        ]
+    },
+    "crypto": {
+        "tls_min_version": "1.3",
+        "data_encryption": "AES-256-GCM",
+        "kms_enabled": true
+    },
+    "backup": {
+        "encrypted": true,
+        "immutable": true,
+        "last_restore_test_days_ago": 30,
+        "gitlab_interval_minutes": 60
+    },
+    "monitoring": {
+        "centralized": true,
+        "retention_days": 180,
+        "sources": ["gitlab", "iam", "cicd", "vpn", "firewall"]
+    }
+}

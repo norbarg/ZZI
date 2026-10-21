@@ -1,0 +1,92 @@
+{
+  "organization": "DevBridge Solutions",
+  "generated_at": "2026-10-21T11:40:17.406724+00:00",
+  "summary": {
+    "total": 8,
+    "pass": 8,
+    "fail": 0
+  },
+  "results": [
+    {
+      "id": "ID-01",
+      "name": "MFA для всіх користувачів",
+      "status": "PASS",
+      "severity": "HIGH",
+      "standard": "ISO/IEC 27001:2022 A.8.5",
+      "risk": "T1",
+      "details": "Політика MFA для 180 осіб декларована; усі тестові записи з MFA",
+      "recommendation": null
+    },
+    {
+      "id": "ID-02",
+      "name": "FIDO2 для привілейованих ролей",
+      "status": "PASS",
+      "severity": "HIGH",
+      "standard": "ISO/IEC 27001:2022 A.8.5",
+      "risk": "T1",
+      "details": "Усі привілейовані записи використовують FIDO2",
+      "recommendation": null
+    },
+    {
+      "id": "DS-01",
+      "name": "Ізоляція P1–P8 [власна]",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "standard": "ISO/IEC 27001:2022 A.8.3",
+      "risk": "T2",
+      "details": "Проєкти P1–P8 ізольовані",
+      "recommendation": null
+    },
+    {
+      "id": "CI-01",
+      "name": "Захист CI/CD runner [власна]",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "standard": "ISO/IEC 27001:2022 A.8.25",
+      "risk": "T3/T4",
+      "details": "Runner ізольовані та не містять довгострокових секретів",
+      "recommendation": null
+    },
+    {
+      "id": "CR-01",
+      "name": "Мінімальна версія TLS 1.3",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "standard": "ISO/IEC 27001:2022 A.8.24",
+      "risk": "T1",
+      "details": "Мінімальна версія TLS: 1.3",
+      "recommendation": null
+    },
+    {
+      "id": "CR-02",
+      "name": "AES-256-GCM і KMS",
+      "status": "PASS",
+      "severity": "HIGH",
+      "standard": "ISO/IEC 27001:2022 A.8.24",
+      "risk": "T2/T4",
+      "details": "Шифрування=AES-256-GCM, KMS=True",
+      "recommendation": null
+    },
+    {
+      "id": "BC-01",
+      "name": "Захищені резервні копії",
+      "status": "PASS",
+      "severity": "HIGH",
+      "standard": "ISO/IEC 27001:2022 A.8.13",
+      "risk": "T2/T3",
+      "details": "Encrypted=True, immutable=True, тест=30 днів, GitLab interval=60 хв",
+      "recommendation": null
+    },
+    {
+      "id": "LG-01",
+      "name": "Централізоване журналювання",
+      "status": "PASS",
+      "severity": "HIGH",
+      "standard": "ISO/IEC 27001:2022 A.8.15",
+      "risk": "T1/T3",
+      "details": "SIEM=True; retention=180; відсутні джерела=",
+      "recommendation": null
+    }
+  ],
+  "note": "Перевірено лише модельну JSON-конфігурацію, не фактичну хмарну інфраструктуру."
+}
